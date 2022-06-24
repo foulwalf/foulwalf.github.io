@@ -1,16 +1,9 @@
-let menuButton = document.getElementById("menu-btn")
-let collapsibleMenu = document.getElementById("menu")
+VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare": .5,
+});
 
-menuButton.addEventListener("click", function(){
-    //slideDown(collapsibleMenu);
-})
-
-// function slideUp(e){
-//     e.classList.toggle('is-open')
-//     // e.style.transition = "all 2s ease-in-out";
-//     // e.style.height = "0px";
-// }
-// function slideDown(e){
-//     e.style.transition = "all 2s ease-in-out";
-//     e.style.height = "fit-content";
-// }
+//It also supports NodeList
+VanillaTilt.init(document.querySelectorAll(".card"));
